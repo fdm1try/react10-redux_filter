@@ -1,0 +1,70 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.editor {
+  text-align: left;
+}
+
+.editor__form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.editor__form_name, .editor__form_price {
+  flex-grow: 1;
+  padding: 5px 10px;
+}
+
+.editor__filter-name {
+  width: 30%;
+  padding: 5px 10px;
+}
+
+.editor__form_submit, .editor__form_reset {
+  cursor: pointer;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-word;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  margin-top: 3px;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.item__name {
+  flex-basis: 50%;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.item__price {
+  margin-left: auto;
+}
+
+.item__edit, .item__remove {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+
+.item__edit:disabled, .item__remove:disabled {
+  cursor: not-allowed;
+}
